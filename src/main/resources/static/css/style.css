@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    color:#333;
+}
+
+/* ===========================
+   Header
+=========================== */
+
+.header-card{
+    background:#ffffff;
+    border-radius:20px;
+    padding:35px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    margin-bottom:30px;
+}
+
+.heading-small{
+    color:#198754;
+    font-size:14px;
+    letter-spacing:2px;
+    font-weight:600;
+}
+
+.header-card h1{
+    margin-top:10px;
+    font-size:38px;
+    font-weight:700;
+}
+
+.header-card p{
+    color:#777;
+    margin-top:10px;
+    margin-bottom:25px;
+}
+
+.top-buttons{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+.top-buttons .btn{
+    border-radius:12px;
+    font-weight:500;
+}
+
+/* ===========================
+   Dashboard Cards
+=========================== */
+
+.dashboard-card{
+    background:#fff;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+    text-align:center;
+}
+
+.dashboard-card:hover{
+    transform:translateY(-5px);
+}
+
+.dashboard-card h6{
+    color:#666;
+    margin-bottom:10px;
+}
+
+.dashboard-card h2{
+    color:#198754;
+    font-size:36px;
+    font-weight:bold;
+}
+
+/* ===========================
+   Table Section
+=========================== */
+
+.table-card{
+    background:#fff;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.table-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.table-header h3{
+    font-weight:700;
+}
+
+.table-toolbar{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-bottom:25px;
+}
+
+.search-form{
+    display:flex;
+    flex:1;
+    gap:10px;
+}
+
+.search-form input{
+    min-width:250px;
+}
+
+/* ===========================
+   Forms
+=========================== */
+
+.form-control,
+.form-select{
+    border-radius:12px;
+    border:1px solid #ddd;
+    padding:10px 15px;
+}
+
+.form-control:focus,
+.form-select:focus{
+    border-color:#198754;
+    box-shadow:0 0 0 .15rem rgba(25,135,84,.2);
+}
+
+/* ===========================
+   Tables
+=========================== */
+
+.table{
+    margin-bottom:0;
+}
+
+.table thead{
+    background:#198754;
+    color:white;
+}
+
+.table thead th{
+    border:none;
+    padding:15px;
+}
+
+.table tbody td{
+    vertical-align:middle;
+    padding:14px;
+}
+
+.table-hover tbody tr:hover{
+    background:#f7faf8;
+}
+
+/* ===========================
+   Badges
+=========================== */
+
+.badge{
+    padding:8px 14px;
+    border-radius:20px;
+    font-size:13px;
+}
+
+/* ===========================
+   Buttons
+=========================== */
+
+.btn{
+    border-radius:10px;
+    transition:.3s;
+}
+
+.btn-success{
+    background:#198754;
+    border:none;
+}
+
+.btn-success:hover{
+    background:#157347;
+}
+
+.btn-warning{
+    color:#fff;
+}
+
+.btn-warning:hover{
+    color:#fff;
+}
+
+.btn-danger:hover{
+    opacity:.9;
+}
+
+/* ===========================
+   Login Page
+=========================== */
+
+.login-page{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#198754,#20c997);
+}
+
+.login-card{
+    width:420px;
+    background:#fff;
+    border-radius:20px;
+    padding:40px;
+    box-shadow:0 15px 35px rgba(0,0,0,.2);
+}
+
+.login-card h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#198754;
+    font-weight:bold;
+}
+
+.login-card .form-control{
+    margin-bottom:18px;
+}
+
+/* ===========================
+   Add/Edit Form
+=========================== */
+
+.card{
+    border:none;
+    border-radius:18px;
+}
+
+.card-header{
+    border-radius:18px 18px 0 0 !important;
+}
+
+.card-body{
+    padding:30px;
+}
+
+label{
+    font-weight:600;
+    margin-bottom:8px;
+}
+
+/* ===========================
+   Footer
+=========================== */
+
+.footer{
+    margin-top:40px;
+    text-align:center;
+    color:#777;
+    font-size:14px;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:992px){
+
+.header-card h1{
+    font-size:30px;
+}
+
+.table-toolbar{
+    flex-direction:column;
+}
+
+.search-form{
+    width:100%;
+}
+
+}
+
+@media(max-width:768px){
+
+.header-card{
+    padding:25px;
+}
+
+.dashboard-card{
+    margin-bottom:20px;
+}
+
+.header-card h1{
+    font-size:26px;
+}
+
+.top-buttons{
+    flex-direction:column;
+}
+
+.top-buttons .btn{
+    width:100%;
+}
+
+.login-card{
+    width:95%;
+}
+
+.table-header{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:15px;
+}
+
+}
